@@ -5,3 +5,9 @@
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
+@mixin appearence-clear {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

@@ -6,17 +6,66 @@
   border-bottom: $border-cyan;
   padding: 20px;
 
+  &__interior {
+    algin-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: $container-max;
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+
+    @media screen and (min-width: $break-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   &__title {
     color: $color-white;
     font-size: 36px;
     line-height: 1;
   }
 
-  &__interior {
-    display: flex;
-    max-width: $container-max;
-    margin: 0 auto;
-    text-align: center;
-    width: 95%;
+  &__search {
+    background: $color-white;
+    height: 50px;
+    margin: 10px auto 0;
+    max-width: 400px;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: $break-tablet) {
+      margin: 0;
+    }
+
+    &::after {
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid $color-black;
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      right: 10px;
+      z-index: 0;
+    }
   }
+
+  &__search-select {
+    @include appearence-clear;
+    background: transparent;
+    font-size: 18px;
+    height: 100%;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+  } 
 }

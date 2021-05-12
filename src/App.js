@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import Header from './componenets/Header';
 import JobPost from './componenets/JobPost';
 
