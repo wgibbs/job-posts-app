@@ -1,0 +1,21 @@
+//Colors
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-cyan: #00FFFF;
+
+//Containers + Breakpoints
+$container-max: 1280px;
+
+//Borders
+$border-black: 1px solid $color-black;
+$border-cyan: 1px solid $color-cyan;
+
+//Breakpoints
+$break-desktop-sm: $container-max;
+$break-tablet-md: 850px;
+$break-phone-lg: 640px;
+$break-phone: 480px;
+
+//Fonts
+$title-font: 'Roboto Mono', monospace;
+$text-font: 'Oxygen', sans-serif;

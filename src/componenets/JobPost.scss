@@ -1,0 +1,78 @@
+@import "../scss/variables.scss";
+@import "../scss/mixins.scss";
+
+.job-post-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px auto 0;
+  max-width: $container-max;
+  position: relative;
+  width: 95%;
+}
+
+.job-post {
+  border-radius: 4px;
+  border: $border-black;
+  @include primary-transition;
+  margin: 5px;
+  padding: 20px;
+  max-width: calc(100% - 10px);
+  width: 100%;
+
+  @media screen and (min-width: $break-phone) {
+    max-width: calc(50% - 10px);
+    width: 50%;
+  }
+
+  @media screen and (min-width: $break-phone-lg) {
+    max-width: calc(33% - 10px);
+    width: 33%;
+  }
+
+  @media screen and (min-width: $break-desktop-sm) {
+    max-width: calc(20% - 10px);
+    width: 20%;
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+
+  &__company {
+    font-size: 14px;
+    margin: 5px 0 0;
+  }
+
+  &__title-divider {
+    border: 0;
+    border-bottom: $border-black;
+    margin: 10px 0 0;
+  }
+
+  &__description {
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 20px 0 0;
+  }
+
+  &__link {
+    border: $border-black;
+    display: block;
+    color: $color-black;
+    font-family: $text-font;
+    font-size: 18px;
+    @include primary-transition;
+    line-height: 1;
+    margin: 20px 0 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $color-cyan;
+    }
+  }
+}

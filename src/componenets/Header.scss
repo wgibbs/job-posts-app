@@ -1,0 +1,22 @@
+@import "../scss/variables.scss";
+@import "../scss/mixins.scss";
+
+.header {
+  background: $color-black;
+  border-bottom: $border-cyan;
+  padding: 20px;
+
+  &__title {
+    color: $color-white;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  &__interior {
+    display: flex;
+    max-width: $container-max;
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+  }
+}
