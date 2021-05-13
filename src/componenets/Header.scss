@@ -4,10 +4,10 @@
 .header {
   background: $color-black;
   border-bottom: $border-cyan;
-  padding: 20px;
+  padding: 30px 0;
 
   &__interior {
-    algin-items: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,16 +16,39 @@
     text-align: center;
     width: 95%;
 
-    @media screen and (min-width: $break-tablet) {
+    @media screen and (min-width: $break-tablet-lg) {
       flex-direction: row;
       justify-content: space-between;
     }
   }
 
   &__title {
+    align-items: center;
     color: $color-white;
-    font-size: 36px;
-    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    line-height: 1.2;
+
+    @media screen and (min-width: $break-tablet-lg) {
+      font-size: 30px;
+      flex-direction: row;
+    }
+    
+    @media screen and (min-width: $break-desktop-sm) {
+      font-size: 34px;
+    }
+  }
+
+  &__title-text {
+
+    &:nth-of-type(2) {
+      margin-left: 0;
+
+      @media screen and (min-width: $break-tablet-lg) {
+        margin-left: 10px;
+      }
+    }
   }
 
   &__search {
@@ -37,14 +60,14 @@
     position: relative;
     width: 100%;
 
-    @media screen and (min-width: $break-tablet) {
+    @media screen and (min-width: $break-tablet-lg) {
       margin: 0;
     }
 
     &::after {
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid $color-black;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid $color-black;
       content: '';
       position: absolute;
       pointer-events: none;
@@ -54,13 +77,19 @@
       height: 0;
       right: 10px;
       z-index: 0;
+
+      @media screen and (min-width: $break-phone) {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid $color-black;
+      }
     }
   }
 
   &__search-select {
     @include appearence-clear;
     background: transparent;
-    font-size: 18px;
+    font-size: 14px;
     height: 100%;
     padding: 0 20px;
     position: relative;
@@ -68,5 +97,9 @@
     text-transform: uppercase;
     width: 100%;
     z-index: 1;
+
+    @media screen and (min-width: $break-phone) {
+      font-size: 18px;
+    }
   } 
 }

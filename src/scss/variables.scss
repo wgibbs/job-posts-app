@@ -12,10 +12,12 @@ $border-cyan: 1px solid $color-cyan;
 
 //Breakpoints
 $break-desktop-sm: $container-max;
-$break-tablet-lg: 850px;
+$break-tablet-lg: 1100px;
+$break-tablet-md: 850px;
 $break-tablet: 768px;
 $break-phone-lg: 640px;
 $break-phone: 480px;
+$break-phone-sm: 321px;
 
 //Fonts
 $title-font: 'Roboto Mono', monospace;
