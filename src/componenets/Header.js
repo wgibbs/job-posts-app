@@ -9,15 +9,16 @@ class Header extends React.Component {
         <div className="header__interior">
           <h1 className="header__title">
             <span className="header__title-text">{this.props.title}:</span> 
-            <span className="header__title-text">{this.props.defaultValue || 'Featured'}</span>
+            <span className="header__title-text">{this.props.category || 'All Posts'}</span>
           </h1>
           <div className="header__search">
             <label className="visually-hidden">Job Categories</label>
-            <select className="header__search-select" onChange={this.props.selectChange}>
+            <select className="header__search-select" onChange={this.props.selectChange} defaultValue="0">
               <option value="">Select a Category</option>
-              <option value="UI/UX Design">UI/UX Design</option>
-              <option value="Front End Development">Front End Development</option>
-              <option value="Software Development">Software Development</option>
+              <option value="0">All Posts</option>
+              <option value="1">UI/UX Design</option>
+              <option value="2">Front End Development</option>
+              <option value="3">Software Development</option>
             </select>
           </div>
         </div>
