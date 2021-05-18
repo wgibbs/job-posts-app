@@ -1,4 +1,5 @@
 import React from 'react';
+import {posts} from './api/posts';
 import Header from './componenets/Header';
 import JobPost from './componenets/JobPost';
 import Footer from './componenets/Footer';
@@ -25,9 +26,7 @@ class App extends React.Component {
     return (
       <div className="job-posts-app">
         <Header title="Job Posts" selectChange={this.selectChange} category={this.state.categoryText} />
-        <section className="job-post-container">
-          <JobPost activeCategory={this.state.value ? this.state.value : 0} />
-        </section>
+        <JobPost posts={posts} activeCategory={this.state.value ? this.state.value : 'all'} />
         <Footer text="&copy; 2021 Job Posts Inc." />
       </div>
     );
