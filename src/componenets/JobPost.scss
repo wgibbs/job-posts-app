@@ -20,6 +20,14 @@
   max-width: calc(100% - 10px);
   width: 100%;
 
+  &.active {
+    display: block;
+  }
+
+  &.hidden {
+    display: none;
+  }
+
   @media screen and (min-width: $break-phone) {
     max-width: calc(50% - 10px);
     width: 50%;

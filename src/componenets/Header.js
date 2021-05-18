@@ -14,7 +14,7 @@ class Header extends React.Component {
           <div className="header__search">
             <label className="visually-hidden">Job Categories</label>
             <select className="header__search-select" onChange={this.props.selectChange} defaultValue="0">
-              <option value="">Select a Category</option>
+              <option value="" disabled="disabled">Select a Category</option>
               <option value="0">All Posts</option>
               <option value="1">UI/UX Design</option>
               <option value="2">Front End Development</option>

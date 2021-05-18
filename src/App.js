@@ -25,8 +25,8 @@ class App extends React.Component {
     return (
       <div className="job-posts-app">
         <Header title="Job Posts" selectChange={this.selectChange} category={this.state.categoryText} />
-        <section className={this.state.value ? 'job-post-container category-' + this.state.value + '-active' : 'job-post-container category-0-active'}>
-          <JobPost />
+        <section className="job-post-container">
+          <JobPost activeCategory={this.state.value ? this.state.value : 0} />
         </section>
         <Footer text="&copy; 2021 Job Posts Inc." />
       </div>
