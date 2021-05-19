@@ -6,8 +6,6 @@ class JobPost extends React.Component {
   render() {
     const posts = this.props.posts;
     const activeCategory = this.props.activeCategory;
-
-    console.log(Object.keys(posts));
     
     return (
       <section className="job-post-container">
