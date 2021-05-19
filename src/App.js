@@ -25,7 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="job-posts-app">
-        <Header title="Job Posts" selectChange={this.selectChange} category={this.state.categoryText} />
+        <Header title="Job Posts" posts={posts} selectChange={this.selectChange} category={this.state.categoryText} />
         <JobPost posts={posts} activeCategory={this.state.value ? this.state.value : 'all'} />
         <Footer text="&copy; 2021 Job Posts Inc." />
       </div>

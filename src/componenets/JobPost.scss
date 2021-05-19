@@ -83,22 +83,4 @@
       background: $color-cyan;
     }
   }
-
-  &__no-results {
-    padding: 50px 0;
-    text-align: center;
-
-    @media screen and (min-width: $break-phone-lg) {
-      padding: 100px 0;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.2;
-      
-      @media screen and (min-width: $break-phone-lg) {
-        font-size: 24px;
-      }
-    }
-  }
 }

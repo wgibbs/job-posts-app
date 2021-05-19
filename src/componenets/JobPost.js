@@ -9,10 +9,10 @@ class JobPost extends React.Component {
     
     return (
       <section className="job-post-container">
-        {posts.map((post) =>
+        {posts.postData.map((post) =>
           <div 
             key={post.id}
-            className={'job-post' + (activeCategory === 'all' || activeCategory === post.category ? '' : ' hidden')}
+            className={'job-post' + (activeCategory === 'all' || activeCategory === post.categoryId ? '' : ' hidden')}
           >
             <h2 className="job-post__title">{post.title}</h2>
             <h3 className="job-post__company">{post.company}</h3>

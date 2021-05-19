@@ -4,6 +4,8 @@ import './Header.scss';
 class Header extends React.Component {
   
   render() {
+    const posts = this.props.posts;
+
     return (
       <header className="header">
         <div className="header__interior">
@@ -16,9 +18,9 @@ class Header extends React.Component {
             <select className="header__search-select" onChange={this.props.selectChange} defaultValue="all">
               <option value="" disabled="disabled">Select a Category</option>
               <option value="all">All Posts</option>
-              <option value="1">UI/UX Design</option>
-              <option value="2">Front End Development</option>
-              <option value="3">Software Development</option>
+              {posts.categories.map((category) =>
+                <option key={category.id} value={category.id}>{category.name}</option>
+              )}
             </select>
           </div>
         </div>
