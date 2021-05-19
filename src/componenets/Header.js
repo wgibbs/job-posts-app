@@ -5,6 +5,7 @@ class Header extends React.Component {
   
   render() {
     const posts = this.props.posts;
+    const categories = [...new Set(posts.map(p => p.category))];
 
     return (
       <header className="header">
@@ -18,8 +19,8 @@ class Header extends React.Component {
             <select className="header__search-select" onChange={this.props.selectChange} defaultValue="all">
               <option value="" disabled="disabled">Select a Category</option>
               <option value="all">All Posts</option>
-              {posts.categories.map((category) =>
-                <option key={category.id} value={category.id}>{category.name}</option>
+              {categories.map((cat) =>
+                <option key={cat} value={cat}>{cat}</option>
               )}
             </select>
           </div>
