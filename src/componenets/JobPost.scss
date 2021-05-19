@@ -65,6 +65,27 @@
     margin: 10px 0 0;
   }
 
+  &__highlights {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+
+    li {
+      line-height: 1.4;
+      font-size: 14px;
+      padding: 0 0 0 10px;
+      position: relative;
+
+      &::before {
+        content: '•';
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
   &__link {
     border: $border-black;
     display: block;
