@@ -1,6 +1,6 @@
 # Job Posts App
 
-A demo of this project can be viewed [here](https://www.wgibbs.com/job-posts-app/).
+A single-page application prototype for Job Posts built with Create React App. A demo of this project can be viewed [here](https://www.wgibbs.com/job-posts-app/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
