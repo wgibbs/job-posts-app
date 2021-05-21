@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 
 class Header extends React.Component {
   
@@ -23,6 +24,7 @@ class Header extends React.Component {
                 <option key={cat} value={cat}>{cat}</option>
               )}
             </select>
+            <ArrowDropDownCircleIcon fontSize="large" />
           </div>
         </div>
       </header>

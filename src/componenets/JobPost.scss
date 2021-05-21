@@ -87,8 +87,13 @@
       align-items: center;
       display: flex;
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1;
+      margin: 5px 0 0;
       position: relative;
+
+      &:first-of-type {
+        margin: 0;
+      }
 
       svg {
         margin-right: 5px;
@@ -97,7 +102,7 @@
   }
 
   &__link {
-    border: $border-black;
+    border: 2px solid $color-black;
     display: block;
     color: $color-black;
     font-family: $text-font;

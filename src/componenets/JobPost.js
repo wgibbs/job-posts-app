@@ -18,6 +18,7 @@ class JobPost extends React.Component {
           <div 
             key={i}
             className={'job-post' + (activeCategory === 'all' || activeCategory === post.category ? '' : ' hidden')}
+            aria-hidden={activeCategory === 'all' || activeCategory === post.category ? 'false' : 'true'}
           >
             <h2 className="job-post__title">{post.title}</h2>
             <h3 className="job-post__company">{post.company}</h3>
