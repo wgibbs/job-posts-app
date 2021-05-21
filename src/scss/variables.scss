@@ -1,7 +1,10 @@
+@import 'fonts.scss';
+
 //Colors
 $color-black: #000000;
 $color-white: #FFFFFF;
 $color-cyan: #00FFFF;
+$color-dark--primary: #202020;
 
 //Containers + Breakpoints
 $container-max: 1280px;
@@ -21,4 +24,4 @@ $break-phone-sm: 321px;
 
 //Fonts
 $title-font: 'Roboto Mono', monospace;
-$text-font: 'Oxygen', sans-serif;
+$text-font: 'Varela Round', sans-serif;

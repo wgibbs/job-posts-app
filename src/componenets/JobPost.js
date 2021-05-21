@@ -1,5 +1,10 @@
 import React from 'react';
 import './JobPost.scss';
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import BeachAccessIcon from '@material-ui/icons/BeachAccess';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
+import WorkIcon from '@material-ui/icons/Work';
 
 class JobPost extends React.Component {
 
@@ -20,11 +25,13 @@ class JobPost extends React.Component {
             <p className="job-post__description">{post.desc}</p>
             <div className="job-post__highlights">
               <h4>Highlights:</h4>
+              <hr className="job-post__title-divider job-post__title-divider--small" />
               <ul>
-                <li>{post.highlight1}</li>
-                <li>{post.highlight2}</li>
-                <li>{post.highlight3}</li>
-                <li>{post.highlight4}</li>
+                <li><WorkIcon fontSize="small" /> {post.highlight1}</li>
+                <li><MonetizationOnIcon fontSize="small" /> {post.highlight2}</li>
+                <li><LocalHospitalIcon fontSize="small" /> {post.highlight3}</li>
+                <li><BeachAccessIcon fontSize="small" /> {post.highlight4}</li>
+                <li><AccountBalanceIcon fontSize="small" /> {post.highlight5}</li>
               </ul>
             </div>
             <a className="job-post__link" href="/">Learn More</a>
