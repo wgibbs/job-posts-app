@@ -5,19 +5,23 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 40px auto 0;
+  margin: 280px auto 0;
   max-width: $container-max;
   position: relative;
-  width: 95%;
+  width: 90%;
 
-  @media screen and (min-width: $break-phone) {
-    margin: 60px auto 0;
+  @media screen and (min-width: $break-phone-lg) {
+    margin: 320px auto 0;
+  }
+
+  @media screen and (min-width: $break-tablet-lg) {
+    margin: 220px auto 0;
   }
 }
 
 .job-post {
-  border-radius: 4px;
-  border: $border-black;
+  border-radius: 6px;
+  border: 1px solid $color-black;
   display: block;
   @include primary-transition;
   margin: 5px;
@@ -35,13 +39,14 @@
   }
 
   @media screen and (min-width: $break-phone-lg) {
-    max-width: calc(33% - 10px);
+    margin: 7px;
+    max-width: calc(33% - 14px);
     width: 33%;
   }
 
-  @media screen and (min-width: $break-desktop-sm) {
-    max-width: calc(20% - 10px);
-    width: 20%;
+  @media screen and (min-width: $break-tablet-lg) {
+    max-width: calc(25% - 14px);
+    width: 25%;
   }
 
   &__title {
@@ -55,7 +60,7 @@
 
   &__title-divider {
     border: 0;
-    border-bottom: $border-black;
+    border-bottom: 1px solid $color-black;
     margin: 10px 0 0;
 
     &--small {
@@ -115,7 +120,7 @@
     text-transform: uppercase;
 
     &:hover {
-      background: $color-cyan;
+      background: $color-highlight;
     }
   }
 }

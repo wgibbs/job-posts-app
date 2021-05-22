@@ -2,6 +2,7 @@ import React from 'react';
 import {posts} from './api/posts';
 import Header from './componenets/Header';
 import JobPost from './componenets/JobPost';
+import ScrollTopButton from './componenets/ScrollTopButton';
 import Footer from './componenets/Footer';
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
       value: '',
       categoryText: '',
     };
+    this.myRef = React.createRef();
     this.selectChange = this.selectChange.bind(this);
   }
 
@@ -25,9 +27,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="job-posts-app">
-        <Header title="Job Posts" posts={posts} selectChange={this.selectChange} category={this.state.categoryText} />
+        <Header posts={posts} selectChange={this.selectChange} category={this.state.categoryText} />
         <JobPost posts={posts} activeCategory={this.state.value ? this.state.value : 'all'} />
-        <Footer text="&copy; 2021 Job Posts Inc." />
+        <ScrollTopButton scrollStepInPx="50" delayInMs="16.66"/>
+        <Footer text="&copy; 2021 Super Job Board Inc." />
       </div>
     );
   }

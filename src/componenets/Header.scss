@@ -3,8 +3,16 @@
 
 .header {
   background: $color-dark--primary;
-  border-bottom: 2px solid $color-cyan;
-  padding: 30px 0;
+  border-bottom: 4px solid $color-highlight;
+  padding: 15px 0 35px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  @media screen and (min-width: $break-tablet-lg) {
+    padding: 30px 0;
+  }
 
   &__interior {
     align-items: center;
@@ -14,7 +22,7 @@
     max-width: $container-max;
     margin: 0 auto;
     text-align: center;
-    width: 95%;
+    width: 90%;
 
     @media screen and (min-width: $break-tablet-lg) {
       flex-direction: row;
@@ -27,17 +35,43 @@
     color: $color-white;
     display: flex;
     flex-direction: column;
-    font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.1;
 
     @media screen and (min-width: $break-tablet-lg) {
-      font-size: 30px;
-      flex-direction: row;
+      align-items: flex-start;
     }
-    
-    @media screen and (min-width: $break-desktop-sm) {
-      font-size: 34px;
+
+    h1 {
+      font-size: 26px;
+      
+      @media screen and (min-width: $break-phone-lg) {
+        font-size: 36px;
+      }
+
+      @media screen and (min-width: $break-tablet-lg) {
+        font-size: 42px;
+      }
     }
+
+    h2 {
+      font-size: 24px;
+      height: 50px;
+
+      @media screen and (min-width: $break-phone-lg) {
+        font-size: 28px;
+      }
+      
+      @media screen and (min-width: $break-tablet-lg) {
+        font-size: 36px;
+        height: auto;
+      }
+    }
+  }
+
+  &__title-divider {
+    border: 0;
+    border-top: 2px solid $color-highlight;
+    width: 100%;
   }
 
   &__title-text {
@@ -52,17 +86,19 @@
   }
 
   &__search {
-    background: $color-white;
-    border: 1px solid $color-cyan;
-    height: 50px;
-    margin: 10px auto 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px auto 0;
     max-width: 400px;
     position: relative;
     width: 100%;
+    text-align: left;
 
     @media screen and (min-width: $break-tablet-lg) {
+      align-items: flex-start;
       margin: 0;
-      height: 60px;
     }
 
     svg {
@@ -75,17 +111,40 @@
     }
   }
 
+  &__search-label {
+    color: $color-white;
+
+    @media screen and (min-width: $break-tablet-lg) {
+      font-size: 20px;
+    }
+  }
+
   &__search-select {
-    @include appearence-clear;
-    background: transparent;
-    font-size: 14px;
-    height: 100%;
-    padding: 0 20px;
+    background: $color-white;
+    border: 2px solid $color-highlight;
+    height: 50px;
+    margin: 10px 0 0;
     position: relative;
     text-align: center;
     text-transform: capitalize;
     width: 100%;
     z-index: 1;
+
+    select {
+      @include appearence-clear;
+      font-size: 18px;
+      height: 100%;
+      padding: 10px 15px;
+      width: 100%;
+
+      &:focus-visible {
+        outline: 0;
+      }
+
+      &:focus {
+        outline: $color-highlight;
+      } 
+    }
 
     @media screen and (min-width: $break-phone) {
       font-size: 18px;

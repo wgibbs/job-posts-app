@@ -28,11 +28,11 @@ class JobPost extends React.Component {
               <h4>Highlights:</h4>
               <hr className="job-post__title-divider job-post__title-divider--small" />
               <ul>
-                <li><WorkIcon fontSize="small" /> {post.highlight1}</li>
-                <li><MonetizationOnIcon fontSize="small" /> {post.highlight2}</li>
-                <li><LocalHospitalIcon fontSize="small" /> {post.highlight3}</li>
-                <li><BeachAccessIcon fontSize="small" /> {post.highlight4}</li>
-                <li><AccountBalanceIcon fontSize="small" /> {post.highlight5}</li>
+                <li><WorkIcon fontSize="small" /> {post.experience}</li>
+                <li><MonetizationOnIcon fontSize="small" /> {post.salary}</li>
+                <li><LocalHospitalIcon fontSize="small" /> {post.health}</li>
+                <li><BeachAccessIcon fontSize="small" /> {post.vacation}</li>
+                <li><AccountBalanceIcon fontSize="small" /> {post.retirement}</li>
               </ul>
             </div>
             <a className="job-post__link" href="/">Learn More</a>

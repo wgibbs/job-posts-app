@@ -1,0 +1,37 @@
+import React from 'react';
+import './ScrollTopButton.scss';
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
+
+class ScrollTopButton extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      intervalId: 0
+    };
+  }
+  
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+      clearInterval(this.state.intervalId);
+    }
+    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+  }
+  
+  scrollToTop() {
+    let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+    this.setState({ intervalId: intervalId });
+  }
+  
+  render () {
+    return <button 
+            title='Back to top' 
+            className='button__scroll-top' 
+            onClick={() => {this.scrollToTop();}}
+            >
+              <DoubleArrowIcon fontSize="large" />
+          </button>;
+   }
+}
+
+export default ScrollTopButton;

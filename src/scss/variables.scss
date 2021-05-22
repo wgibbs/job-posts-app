@@ -3,17 +3,15 @@
 //Colors
 $color-black: #000000;
 $color-white: #FFFFFF;
-$color-cyan: #00FFFF;
+$color-highlight: #00FFFF;
 $color-dark--primary: #202020;
 
 //Containers + Breakpoints
 $container-max: 1280px;
-
-//Borders
-$border-black: 1px solid $color-black;
-$border-cyan: 1px solid $color-cyan;
+$header-height: 120px;
 
 //Breakpoints
+$break-desktop: 1380px;
 $break-desktop-sm: $container-max;
 $break-tablet-lg: 1100px;
 $break-tablet-md: 850px;

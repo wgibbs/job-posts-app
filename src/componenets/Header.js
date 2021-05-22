@@ -11,20 +11,27 @@ class Header extends React.Component {
     return (
       <header className="header">
         <div className="header__interior">
-          <h1 className="header__title">
-            <span className="header__title-text">{this.props.title}:</span> 
-            <span className="header__title-text">{this.props.category || 'All Posts'}</span>
-          </h1>
+          <div className="header__title">
+            <h1>
+              Super Job Board
+            </h1>
+            <hr className="header__title-divider" />
+            <h2>
+              {this.props.category || 'All Jobs'}
+            </h2>
+          </div>
           <div className="header__search">
-            <label className="visually-hidden">Job Categories</label>
-            <select className="header__search-select" onChange={this.props.selectChange} defaultValue="all">
-              <option value="" disabled="disabled">Select a Category</option>
-              <option value="all">All Posts</option>
-              {categories.map((cat) =>
-                <option key={cat} value={cat}>{cat}</option>
-              )}
-            </select>
-            <ArrowDropDownCircleIcon fontSize="large" />
+            <label className="header__search-label" htmlFor="select-main">Search Job Categories</label>
+            <div className="header__search-select">
+              <select id="select-main" onChange={this.props.selectChange} defaultValue="all">
+                <option value="" disabled="disabled">Select a Category</option>
+                <option value="all">All Jobs</option>
+                {categories.map((cat) =>
+                  <option key={cat} value={cat}>{cat}</option>
+                )}
+              </select>
+              <ArrowDropDownCircleIcon fontSize="large" />
+            </div>
           </div>
         </div>
       </header>
