@@ -1,31 +1,22 @@
-@import "../scss/variables.scss";
-@import "../scss/mixins.scss";
+@import "../scss/main.scss";
 
 .job-post-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 280px auto 0;
-  max-width: $container-max;
+  margin: 40px auto 0;
   position: relative;
   width: 90%;
 
-  @media screen and (min-width: $break-phone-lg) {
-    margin: 320px auto 0;
-  }
-
-  @media screen and (min-width: $break-tablet-lg) {
-    margin: 220px auto 0;
+  @media screen and (min-width: $break-phone) {
+    margin: 60px auto 0;
   }
 }
 
 .job-post {
-  border-radius: 6px;
-  border: 1px solid $color-black;
   display: block;
   @include primary-transition;
-  margin: 5px;
-  padding: 20px;
+  margin: 5px 0;
   max-width: calc(100% - 10px);
   width: 100%;
 
@@ -33,12 +24,13 @@
     display: none;
   }
 
-  @media screen and (min-width: $break-phone) {
+  @media screen and (min-width: $break-phone-lg) {
+    margin: 5px;
     max-width: calc(50% - 10px);
     width: 50%;
   }
 
-  @media screen and (min-width: $break-phone-lg) {
+  @media screen and (min-width: $break-tablet-md) {
     margin: 7px;
     max-width: calc(33% - 14px);
     width: 33%;
@@ -49,13 +41,26 @@
     width: 25%;
   }
 
+  @media screen and (min-width: $break-desktop-lg) {
+    max-width: calc(20% - 14px);
+    width: 20%;
+  }
+
+  &__interior {
+    border-radius: 6px;
+    border: 1px solid $color-black;
+    padding: 15px;
+  }
+
   &__title {
     font-size: 20px;
   }
 
   &__company {
-    font-size: 14px;
-    margin: 5px 0 0;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    margin: 8px 0 0;
   }
 
   &__title-divider {

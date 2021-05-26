@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {posts} from './api/posts';
 import Header from './componenets/Header';
@@ -12,9 +13,10 @@ class App extends React.Component {
     this.state = {
       value: '',
       categoryText: '',
+      scrollActive: false,
     };
-    this.myRef = React.createRef();
     this.selectChange = this.selectChange.bind(this);
+    this.handlePageScroll = this.handlePageScroll.bind(this);
   }
 
   selectChange(event) {
@@ -23,13 +25,33 @@ class App extends React.Component {
       categoryText: event.target.options[event.target.selectedIndex].text,
     });
   }
-  
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handlePageScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handlePageScroll);
+  }
+
+  handlePageScroll(event) {
+    if (window.pageYOffset > 100) {
+      this.setState({
+        scrollActive: true
+      });
+    } else {
+      this.setState({
+        scrollActive: false
+      });
+    }
+  }
+
   render() {
     return (
       <div className="job-posts-app">
         <Header posts={posts} selectChange={this.selectChange} category={this.state.categoryText} />
         <JobPost posts={posts} activeCategory={this.state.value ? this.state.value : 'all'} />
-        <ScrollTopButton scrollStepInPx="50" delayInMs="16.66"/>
+        <ScrollTopButton active={this.state.scrollActive} scrollStepInPx="50" delayInMs="16.66"/>
         <Footer text="&copy; 2021 Super Job Board Inc." />
       </div>
     );

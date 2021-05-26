@@ -1,25 +1,18 @@
-@import "../scss/variables.scss";
-@import "../scss/mixins.scss";
+@import "../scss/main.scss";
 
 .header {
   background: $color-dark--primary;
   border-bottom: 4px solid $color-highlight;
-  padding: 15px 0 35px;
-  position: fixed;
+  padding: 30px 0;
   top: 0;
   width: 100%;
   z-index: 1000;
-
-  @media screen and (min-width: $break-tablet-lg) {
-    padding: 30px 0;
-  }
 
   &__interior {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: $container-max;
     margin: 0 auto;
     text-align: center;
     width: 90%;
@@ -42,26 +35,18 @@
     }
 
     h1 {
-      font-size: 26px;
+      font-size: 34px;
       
       @media screen and (min-width: $break-phone-lg) {
-        font-size: 36px;
-      }
-
-      @media screen and (min-width: $break-tablet-lg) {
         font-size: 42px;
       }
     }
 
     h2 {
-      font-size: 24px;
-      height: 50px;
-
-      @media screen and (min-width: $break-phone-lg) {
-        font-size: 28px;
-      }
+      font-size: 28px;
+      height: 55px;
       
-      @media screen and (min-width: $break-tablet-lg) {
+      @media screen and (min-width: $break-phone-lg) {
         font-size: 36px;
         height: auto;
       }
@@ -106,7 +91,7 @@
       pointer-events: none;
       top: 50%;
       transform: translateY(-50%);
-      right: 10px;
+      right: 0;
       z-index: 0;
     }
   }
@@ -114,7 +99,7 @@
   &__search-label {
     color: $color-white;
 
-    @media screen and (min-width: $break-tablet-lg) {
+    @media screen and (min-width: $break-phone-lg) {
       font-size: 20px;
     }
   }
@@ -131,6 +116,7 @@
     z-index: 1;
 
     select {
+      background: transparent;
       @include appearence-clear;
       font-size: 18px;
       height: 100%;

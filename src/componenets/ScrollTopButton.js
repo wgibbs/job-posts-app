@@ -24,9 +24,12 @@ class ScrollTopButton extends React.Component {
   }
   
   render () {
-    return <button 
+    const active = this.props.active;
+
+    return <button
+            aria-label="Scrol Back to the top of the Page"
             title='Back to top' 
-            className='button__scroll-top' 
+            className={'button__scroll-top' + (active ? ' scroll-active' : '')} 
             onClick={() => {this.scrollToTop();}}
             >
               <DoubleArrowIcon fontSize="large" />

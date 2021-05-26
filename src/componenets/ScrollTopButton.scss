@@ -1,15 +1,16 @@
-@import "../scss/variables.scss";
-@import "../scss/mixins.scss";
+@import "../scss/main.scss";
 
 .button__scroll-top {
   background: transparent;
-  border: 1px solid transparent;
+  border: 1px solid $color-black;
   cursor: pointer;
-  height: 40px;
+  height: 30px;
+  max-width: calc(5% - 2px);
   overflow: hidden;
-  padding: 5px;
+  opacity: 0;
+  padding: 0;
   position: fixed;
-  right: 2px;
+  right: 3px;
   top: 50%;
   transform: translateY(-50%);
   text-indent: -999px;
@@ -18,20 +19,18 @@
   @include primary-transition;
 
   @media screen and (min-width: $break-phone-lg) {
-    right: 1%;
-    width: 3%;
+    height: 40px;
+    max-width: calc(5% - 7px);
+    right: 7px;
   }
 
   &:hover {
     background: $color-highlight;
     border: 1px solid $color-black;
-
-    svg {
-      top: 42%;
-    }
   }
 
   svg {
+    color: $color-dark--primary;
     left: 0;
     margin: auto;
     position: absolute;
@@ -40,5 +39,9 @@
     transform: translateY(-50%) rotate(-90deg);
     width: 100%;
     @include primary-transition;
+  }
+
+  &.scroll-active {
+    opacity: 1;
   }
 }
