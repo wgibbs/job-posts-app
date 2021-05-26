@@ -3,7 +3,7 @@ import './JobPost.scss';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
-import ForwardIcon from '@material-ui/icons/Forward';
+import StarsIcon from '@material-ui/icons/Stars';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import WorkIcon from '@material-ui/icons/Work';
@@ -22,9 +22,9 @@ class JobPost extends React.Component {
             className={'job-post' + (activeCategory === 'all' || activeCategory === post.category ? '' : ' hidden')}
             aria-hidden={activeCategory === 'all' || activeCategory === post.category ? 'false' : 'true'}
           >
-            <div class="job-post__interior">
+            <div className="job-post__interior">
               <h2 className="job-post__title">{post.title}</h2>
-              <h3 className="job-post__company"><DoubleArrowIcon fontSize="small" /> {post.company}</h3>
+              <h3 className="job-post__company"><StarsIcon fontSize="small" /> {post.company}</h3>
               <hr className="job-post__title-divider" />
               <p className="job-post__description">{post.desc}</p>
               <div className="job-post__highlights">
@@ -38,7 +38,10 @@ class JobPost extends React.Component {
                   <li><AccountBalanceIcon fontSize="small" /> {post.retirement}</li>
                 </ul>
               </div>
-              <a className="job-post__link" href="/">Learn More</a>
+              <a className="job-post__link" href="/">
+                <span>Learn More</span> 
+                <DoubleArrowIcon fontSize="small" />
+              </a>
             </div>
           </div>
         )}

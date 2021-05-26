@@ -15,7 +15,7 @@
     justify-content: center;
     margin: 0 auto;
     text-align: center;
-    width: 90%;
+    width: $container-width;
 
     @media screen and (min-width: $break-tablet-lg) {
       flex-direction: row;

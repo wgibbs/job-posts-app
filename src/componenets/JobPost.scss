@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   margin: 40px auto 0;
   position: relative;
-  width: 90%;
+  width: $container-width;
 
   @media screen and (min-width: $break-phone) {
     margin: 60px auto 0;
@@ -61,6 +61,10 @@
     display: flex;
     font-size: 18px;
     margin: 8px 0 0;
+
+    svg {
+      margin-right: 3px;
+    }
   }
 
   &__title-divider {
@@ -112,20 +116,31 @@
   }
 
   &__link {
+    align-items: center;
     border: 2px solid $color-black;
-    display: block;
+    display: flex;
     color: $color-black;
     font-family: $text-font;
-    @include primary-transition;
+    justify-content: center;
     line-height: 1;
     margin: 15px 0 0;
     padding: 10px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    @include primary-transition;
+
+    svg {
+      position: relative;
+      top: -1px;
+    }
 
     &:hover {
       background: $color-highlight;
+
+      svg {
+        left: 3px;
+      }
     }
   }
 }
