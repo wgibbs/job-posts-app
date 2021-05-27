@@ -1,8 +1,8 @@
 export const posts = [
   {    
     category: 'UI Design',
-    title: 'UI Designer',
-    company: 'Facebook',
+    title: 'Job Post 1',
+    company: 'Company Name',
     desc: 'A brief introduction and description of the post.',
     experience: '10+ Years Experience',
     salary: 'Salary: 70-80k',
@@ -12,8 +12,8 @@ export const posts = [
   },
   {     
     category: 'Front End Development',
-    title: 'Front End Developer',
-    company: 'Google',
+    title: 'Job Post 2',
+    company: 'Company Name',
     desc: 'A brief introduction and description of the post.',
     experience: '10+ Years Experience',
     salary: 'Salary: 70-80k',
@@ -23,8 +23,8 @@ export const posts = [
   },
   {    
     category: 'Full Stack Development',
-    title: 'Full Stack Developer',
-    company: 'Amazon',
+    title: 'Job Post 3',
+    company: 'Company Name',
     desc: 'A brief introduction and description of the post.',
     experience: '10+ Years Experience',
     salary: 'Salary: 70-80k',
@@ -34,8 +34,8 @@ export const posts = [
   },
   {     
     category: 'Copywriting',
-    title: 'Copywriter',
-    company: 'Ogilvy & Mather',
+    title: 'Job Post 4',
+    company: 'Company Name',
     desc: 'A brief introduction and description of the post.',
     experience: '10+ Years Experience',
     salary: 'Salary: 70-80k',

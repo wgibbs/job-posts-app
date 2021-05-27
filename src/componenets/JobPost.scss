@@ -1,6 +1,7 @@
 @import "../scss/main.scss";
 
 .job-post-container {
+  align-items: stretch;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -14,6 +15,10 @@
 }
 
 .job-post {
+  border-radius: 6px;
+  border: 1px solid $color-border--primary;
+  color: $color-dark--primary;
+  padding: 15px;
   display: block;
   @include primary-transition;
   margin: 5px 0;
@@ -46,12 +51,6 @@
     width: 20%;
   }
 
-  &__interior {
-    border-radius: 6px;
-    border: 1px solid $color-black;
-    padding: 15px;
-  }
-
   &__title {
     font-size: 20px;
   }
@@ -69,7 +68,7 @@
 
   &__title-divider {
     border: 0;
-    border-bottom: 1px solid $color-black;
+    border-bottom: 1px solid $color-border--primary;
     margin: 10px 0 0;
 
     &--small {
@@ -117,7 +116,7 @@
 
   &__link {
     align-items: center;
-    border: 2px solid $color-black;
+    border: 2px solid $color-border--primary;
     display: flex;
     color: $color-black;
     font-family: $text-font;
@@ -131,16 +130,14 @@
     @include primary-transition;
 
     svg {
+      margin: 0 0 0 5px;
       position: relative;
       top: -1px;
     }
 
     &:hover {
       background: $color-highlight;
-
-      svg {
-        left: 3px;
-      }
+      border: 2px solid $color-dark--primary;
     }
   }
 }

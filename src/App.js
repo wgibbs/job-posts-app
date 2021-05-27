@@ -52,7 +52,7 @@ class App extends React.Component {
         <Header posts={posts} selectChange={this.selectChange} category={this.state.categoryText} />
         <JobPost posts={posts} activeCategory={this.state.value ? this.state.value : 'all'} />
         <ScrollTopButton active={this.state.scrollActive} scrollStepInPx="50" delayInMs="16.66"/>
-        <Footer text="&copy; 2021 Super Job Board Inc." />
+        <Footer text="&copy; 2021 Job Posts Inc." />
       </div>
     );
   }

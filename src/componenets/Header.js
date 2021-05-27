@@ -13,7 +13,7 @@ class Header extends React.Component {
         <div className="header__interior">
           <div className="header__title">
             <h1>
-              Super Job Board
+              Job Posts
             </h1>
             <hr className="header__title-divider" />
             <h2>
