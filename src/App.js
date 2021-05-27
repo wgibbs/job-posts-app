@@ -35,7 +35,7 @@ class App extends React.Component {
   }
 
   handlePageScroll(event) {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 280) {
       this.setState({
         scrollActive: true
       });
