@@ -32,7 +32,7 @@ class JobPost extends React.Component {
                 <hr className="job-post__title-divider job-post__title-divider--small" />
                 <ul>
                   <li><WorkIcon fontSize="small" /> {post.experience}</li>
-                  <li><MonetizationOnIcon fontSize="small" /> {post.salary}</li>
+                  <li><MonetizationOnIcon fontSize="small" />Salary: {post.salary}</li>
                   <li><LocalHospitalIcon fontSize="small" /> {post.health}</li>
                   <li><BeachAccessIcon fontSize="small" /> {post.vacation}</li>
                   <li><AccountBalanceIcon fontSize="small" /> {post.retirement}</li>
