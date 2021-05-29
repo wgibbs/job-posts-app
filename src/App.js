@@ -9,13 +9,13 @@ import Fuse from 'fuse.js';
 
 const fuse = new Fuse(posts, {
   isCaseSensitive: false,
-  //includeScore: true,
+  // includeScore: true,
   // shouldSort: true,
   // includeMatches: false,
   // findAllMatches: false,
-  minMatchCharLength: 3,
+  minMatchCharLength: 2,
   // location: 0,
-  // threshold: 0.3,
+  threshold: 0.5,
   // distance: 100,
   // useExtendedSearch: false,
   // ignoreLocation: false,
