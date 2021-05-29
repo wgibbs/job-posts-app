@@ -143,4 +143,16 @@
       border: 2px solid $color-dark--primary;
     }
   }
+
+  &__no-results {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: calc(100vh - 240px);
+
+    p {
+      font-size: 40px;
+    }
+  }
 }

@@ -7,11 +7,13 @@ class Search extends React.Component {
   render() {
     const posts = this.props.posts;
     const categories = [...new Set(posts.map(p => p.category))];
+    const query = this.props.query;
+    const onSearch = this.props.onSearch;
 
     return (
       <form className="search" action="#" role="search">
         <div className="search__input-wrap">
-          <label htmlFor="search-category">Job Categories</label>
+          <label htmlFor="search-category">Search Categories</label>
           <div className="search__select-wrap">
             <select id="search-category" onChange={this.props.selectChange} defaultValue="all">
               <option value="" disabled="disabled">Select a Category</option>
@@ -24,12 +26,15 @@ class Search extends React.Component {
           </div>
         </div>
         <div className="search__input-wrap">
-          <label htmlFor="search-title-loc">Job Title or Location</label>
+          <label htmlFor="search-title-loc">Search Company/Location</label>
           <input 
             type="search" 
             id="search-title-loc" 
-            className="header__search-text-input" 
-            placeholder="Search Job Title or Location" />
+            className="header__search-text-input"
+            placeholder="Company/Location"
+            value={query} 
+            onChange={onSearch} 
+          />
         </div>
       </form>
     );

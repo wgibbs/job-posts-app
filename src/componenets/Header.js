@@ -7,6 +7,8 @@ class Header extends React.Component {
   render() {
     const posts = this.props.posts;
     const selectChange = this.props.selectChange;
+    const searchQuery = this.props.searchQuery;
+    const onSearch = this.props.onSearch;
 
     return (
       <header className="header">
@@ -20,7 +22,7 @@ class Header extends React.Component {
               {this.props.category || 'All Jobs'}
             </h2>
           </div>
-          <Search posts={posts} selectChange={selectChange} />
+          <Search posts={posts} selectChange={selectChange} onSearch={onSearch} searchQuery={searchQuery} />
         </div>
       </header>
     );
