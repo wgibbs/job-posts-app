@@ -11,7 +11,7 @@
   }
 
   @media screen and (min-width: $break-tablet-lg) {
-    margin: 0 auto;
+    margin: 0;
   }
 
   &__input-wrap {
@@ -22,7 +22,7 @@
     text-align: center;
 
      @media screen and (min-width: $break-phone-lg) {
-      width: 48%;
+      width: 50%;
      }
 
     @media screen and (min-width: $break-tablet-lg) {
@@ -30,13 +30,14 @@
     }
 
     &:first-of-type {
+      
       @media screen and (min-width: $break-phone-lg) {
-        margin-right: 10px;
+        margin-right: 15px;
       }
     }
 
     &:last-of-type {
-      margin-top: 20px;
+      margin-top: 25px;
       
       @media screen and (min-width: $break-phone-lg) {
         margin-top: 0;

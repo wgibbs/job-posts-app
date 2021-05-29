@@ -4,7 +4,7 @@ import Header from './componenets/Header';
 import JobPost from './componenets/JobPost';
 import ScrollTopButton from './componenets/ScrollTopButton';
 import Footer from './componenets/Footer';
-const posts = require('./api/posts.json');
+import posts from './api/posts.json';
 
 class App extends React.Component {
   

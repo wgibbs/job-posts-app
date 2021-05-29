@@ -25,7 +25,11 @@ class Search extends React.Component {
         </div>
         <div className="search__input-wrap">
           <label htmlFor="search-title-loc">Job Title or Location</label>
-          <input type="search" id="search-title-loc" className="header__search-text-input" placeholder="Search Job Title or Location" />
+          <input 
+            type="search" 
+            id="search-title-loc" 
+            className="header__search-text-input" 
+            placeholder="Search Job Title or Location" />
         </div>
       </form>
     );

@@ -22,27 +22,27 @@ class JobPost extends React.Component {
             className={'job-post' + (activeCategory === 'all' || activeCategory === post.category ? '' : ' hidden')}
             aria-hidden={activeCategory === 'all' || activeCategory === post.category ? 'false' : 'true'}
           >
-            <div className="job-post__interior">
-              <h2 className="job-post__title">{post.title}</h2>
-              <h3 className="job-post__company"><StarsIcon fontSize="small" /> {post.company}</h3>
+            <div className="job-post__intro">
+              <h2>{post.title}</h2>
+              <h3><StarsIcon fontSize="small" /> {post.company}</h3>
               <hr className="job-post__title-divider" />
-              <p className="job-post__description">{post.desc}</p>
-              <div className="job-post__highlights">
-                <h4>Highlights:</h4>
-                <hr className="job-post__title-divider job-post__title-divider--small" />
-                <ul>
-                  <li><WorkIcon fontSize="small" /> {post.experience}</li>
-                  <li><MonetizationOnIcon fontSize="small" />Salary: {post.salary}</li>
-                  <li><LocalHospitalIcon fontSize="small" /> {post.health}</li>
-                  <li><BeachAccessIcon fontSize="small" /> {post.vacation}</li>
-                  <li><AccountBalanceIcon fontSize="small" /> {post.retirement}</li>
-                </ul>
-              </div>
-              <a className="job-post__link" href="/">
-                <span>Learn More</span> 
-                <DoubleArrowIcon fontSize="small" />
-              </a>
+              <p>{post.description}</p>
             </div>
+            <div className="job-post__highlights">
+              <h4>Highlights:</h4>
+              <hr className="job-post__title-divider job-post__title-divider--small" />
+              <ul>
+                {post.experience ? <li><WorkIcon fontSize="small" /> {post.experience}</li> : null}
+                {post.salary ? <li><MonetizationOnIcon fontSize="small" />Salary: {post.salary}</li> : null}
+                {post.health ? <li><LocalHospitalIcon fontSize="small" /> {post.health}</li> : null}
+                {post.vacation ? <li><BeachAccessIcon fontSize="small" /> {post.vacation}</li> : null}
+                {post.retirement ? <li><AccountBalanceIcon fontSize="small" /> {post.retirement}</li> : null}
+              </ul>
+            </div>
+            <a className="job-post__link" href="/">
+              <span>Learn More</span> 
+              <DoubleArrowIcon fontSize="small" />
+            </a>
           </div>
         )}
       </section>

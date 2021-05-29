@@ -51,18 +51,27 @@
     width: 20%;
   }
 
-  &__title {
-    font-size: 20px;
-  }
+  &__intro {
 
-  &__company {
-    align-items: center;
-    display: flex;
-    font-size: 18px;
-    margin: 8px 0 0;
+    h2 {
+      font-size: 20px;
+    }
 
-    svg {
-      margin-right: 3px;
+    h3 {
+      align-items: center;
+      display: flex;
+      font-size: 18px;
+      margin: 8px 0 0;
+
+      svg {
+        margin-right: 3px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 10px 0 0;
     }
   }
 
@@ -75,12 +84,6 @@
       max-width: 40%;
       margin: 5px 0 0;
     }
-  }
-
-  &__description {
-    font-size: 14px;
-    line-height: 1.4;
-    margin: 10px 0 0;
   }
 
   &__highlights {

@@ -20,9 +20,7 @@ class Header extends React.Component {
               {this.props.category || 'All Jobs'}
             </h2>
           </div>
-          <div className="header__search">
-            <Search posts={posts} selectChange={selectChange} />
-          </div>
+          <Search posts={posts} selectChange={selectChange} />
         </div>
       </header>
     );
