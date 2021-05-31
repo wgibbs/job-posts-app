@@ -145,14 +145,18 @@
   }
 
   &__no-results {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     justify-content: center;
+    min-height: calc(100vh - 320px);
     padding: 20px;
-    min-height: calc(100vh - 240px);
 
     p {
-      font-size: 40px;
+      font-size: 28px;
+
+      @media screen and (min-width: $break-phone) {
+        font-size: 40px;
+      }
     }
   }
 }

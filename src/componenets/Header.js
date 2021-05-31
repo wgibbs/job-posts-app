@@ -6,9 +6,12 @@ class Header extends React.Component {
   
   render() {
     const posts = this.props.posts;
-    const selectChange = this.props.selectChange;
-    const searchQuery = this.props.searchQuery;
     const onSearch = this.props.onSearch;
+    const fuse = this.props.fuseConfig;
+    const searchQuery = this.props.searchQuery;
+    const results = fuse.search(searchQuery);
+    const postResults = searchQuery ? results.map(post => post.item) : posts;
+    const jobString = `Job${results.length === 1 ? '' : 's'}`;
 
     return (
       <header className="header">
@@ -19,10 +22,13 @@ class Header extends React.Component {
             </h1>
             <hr className="header__title-divider" />
             <h2>
-              {this.props.category || 'All Jobs'}
+              {postResults.length + ' ' + jobString}
             </h2>
           </div>
-          <Search posts={posts} selectChange={selectChange} onSearch={onSearch} searchQuery={searchQuery} />
+          <Search 
+            onSearch={onSearch}
+            searchQuery={searchQuery}
+          />
         </div>
       </header>
     );

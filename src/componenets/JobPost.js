@@ -15,19 +15,17 @@ class JobPost extends React.Component {
     const posts = this.props.posts;
     const fuse = this.props.fuseConfig;
     const searchQuery = this.props.searchQuery;
-    const activeCategory = this.props.activeCategory;
     const results = fuse.search(searchQuery);
     const postResults = searchQuery ? results.map(post => post.item) : posts;
 
     return (
-      <section className="job-post-container">
+      <section className="job-post-container" aria-live="polite">
         {postResults.length ?
           postResults.map((post, i) => {
             return (
               <div 
               key={i}
-              className={'job-post' + (activeCategory === 'all' || activeCategory === post.category ? '' : ' hidden')}
-              aria-hidden={activeCategory === 'all' || activeCategory === post.category ? 'false' : 'true'}
+              className={'job-post'}
               >
                 <div className="job-post__intro">
                   <h2>{post.title}</h2>

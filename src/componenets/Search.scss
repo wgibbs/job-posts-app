@@ -1,14 +1,9 @@
 @import "../scss/main.scss";
 
 .search {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 30px auto 0;
-
-  @media screen and (min-width: $break-phone-lg) {
-    flex-direction: row;
-  }
+  margin: 25px auto 0;
+  width: 100%;
+  max-width: 400px;
 
   @media screen and (min-width: $break-tablet-lg) {
     margin: 0;
@@ -16,32 +11,12 @@
 
   &__input-wrap {
     color: $color-dark--primary;
-    width: 100%;
     position: relative;
-    width: 100%;
     text-align: center;
-
-     @media screen and (min-width: $break-phone-lg) {
-      width: 50%;
-     }
+    width: 100%;
 
     @media screen and (min-width: $break-tablet-lg) {
       text-align: left;
-    }
-
-    &:first-of-type {
-      
-      @media screen and (min-width: $break-phone-lg) {
-        margin-right: 15px;
-      }
-    }
-
-    &:last-of-type {
-      margin-top: 25px;
-      
-      @media screen and (min-width: $break-phone-lg) {
-        margin-top: 0;
-      }
     }
 
     label {
@@ -52,44 +27,17 @@
       }
     }
 
-    select,
     input {
       @include appearence-clear;
       background: $color-white;
       border: 2px solid $color-highlight;
       font-size: 18px;
       height: 50px;
-      margin: 5px 0 0;
+      margin: 7px 0 0;
       padding: 10px 15px;
       width: 100%;
-    }
 
-    input {
-      &::placeholder {
-        color: $color-dark--primary;
-        opacity: 1;
-      }
-
-      &:-ms-input-placeholder {
-        color: $color-dark--primary;
-      }
-
-      &::-ms-input-placeholder {
-        color: $color-dark--primary;
-      }
-    }
-  }
-
-  &__select-wrap {
-    position: relative;
-    
-    svg {
-      position: absolute;
-      pointer-events: none;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 0;
-      z-index: 0;
+      &[type="search"]::-webkit-search-cancel-button {}
     }
   }
 }

@@ -10,10 +10,10 @@ import Fuse from 'fuse.js';
 const fuse = new Fuse(posts, {
   isCaseSensitive: false,
   // includeScore: true,
-  // shouldSort: true,
+  shouldSort: true,
   // includeMatches: false,
   // findAllMatches: false,
-  minMatchCharLength: 2,
+  minMatchCharLength: 1,
   // location: 0,
   threshold: 0.5,
   // distance: 100,
@@ -21,7 +21,7 @@ const fuse = new Fuse(posts, {
   // ignoreLocation: false,
   // ignoreFieldNorm: false,
   keys: [
-    'company',
+    'title',
     'location',
   ]
 });
@@ -32,20 +32,11 @@ class App extends React.Component {
     super(props);
     this.state = {
       value: '',
-      categoryText: '',
       searchQuery: '',
       scrollActive: false,
     };
-    this.selectChange = this.selectChange.bind(this);
     this.handlePageScroll = this.handlePageScroll.bind(this);
     this.onSearch = this.onSearch.bind(this);
-  }
-
-  selectChange(event) {
-    this.setState({
-      value: event.target.value,
-      categoryText: event.target.options[event.target.selectedIndex].text,
-    });
   }
 
   onSearch({ currentTarget }) {
@@ -78,18 +69,17 @@ class App extends React.Component {
     return (
       <div className="job-posts-app">
         <Header 
-          posts={posts} 
-          selectChange={this.selectChange} 
-          onSearch={this.onSearch} 
-          searchQuery={this.state.searchQuery} 
-          category={this.state.categoryText} 
+          posts={posts}
+          fuseConfig={fuse} 
+          onSearch={this.onSearch}
+          searchActive={this.state.searchActive} 
+          searchQuery={this.state.searchQuery}
         />
         <JobPost 
           posts={posts} 
-          fuseConfig={fuse} 
+          fuseConfig={fuse}
           onSearch={this.onSearch} 
-          searchQuery={this.state.searchQuery} 
-          activeCategory={this.state.value ? this.state.value : 'all'} 
+          searchQuery={this.state.searchQuery}
         />
         <ScrollTopButton 
           active={this.state.scrollActive} 

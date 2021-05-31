@@ -1,8 +1,7 @@
 [
-  {    
-    "category": "UI Design",
-    "title": "UI Designer",
-    "company": "Google",
+  {
+    "title": "Graphic Designer",
+    "company": "Company Name",
     "description": "A brief introduction and description of the post.",
     "location": "Remote/Atlanta, GA",
     "experience": "10+ Years Experience",
@@ -11,8 +10,7 @@
     "vacation": "Unlimited PTO",
     "retirement": "401k Match"
   },
-  {    
-    "category": "Front End Development",
+  {
     "title": "Front End Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -23,45 +21,8 @@
     "vacation": "Unlimited PTO",
     "retirement": "401k Match"
   },
-  {    
-    "category": "Full Stack Development",
-    "title": "Job Post 3",
-    "company": "Company Name",
-    "description": "A brief introduction and description of the post.",
-    "location": "Remote/New York, NY",
-    "experience": "10+ Years Experience",
-    "salary": "70-80k",
-    "health": "100% Healthcare Coverage",
-    "vacation": "Unlimited PTO",
-    "retirement": "401k Match"
-  },
-  {    
-    "category": "Copywriting",
-    "title": "Job Post 4",
-    "company": "Company Name",
-    "description": "A brief introduction and description of the post.",
-    "location": "Remote/New York, NY",
-    "experience": "10+ Years Experience",
-    "salary": "70-80k",
-    "health": "100% Healthcare Coverage",
-    "vacation": "Unlimited PTO",
-    "retirement": "401k Match"
-  },
-  {    
-    "category": "UI Design",
-    "title": "Job Post 5",
-    "company": "Company Name",
-    "description": "A brief introduction and description of the post.",
-    "location": "Remote/New York, NY",
-    "experience": "10+ Years Experience",
-    "salary": "70-80k",
-    "health": "100% Healthcare Coverage",
-    "vacation": "Unlimited PTO",
-    "retirement": "401k Match"
-  },
-  {    
-    "category": "Front End Development",
-    "title": "Job Post 6",
+  {
+    "title": "Full Stack Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
     "location": "Remote/San Francisco, CA",
@@ -71,9 +32,8 @@
     "vacation": "Unlimited PTO",
     "retirement": "401k Match"
   },
-  {    
-    "category": "Full Stack Development",
-    "title": "Job Post 7",
+  {
+    "title": "Copywriter",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
     "location": "Remote/Nashville, TN",
@@ -83,69 +43,8 @@
     "vacation": "Unlimited PTO",
     "retirement": "401k Match"
   },
-  {    
-    "category": "Copywriting",
-    "title": "Job Post 8",
-    "company": "Company Name",
-    "description": "A brief introduction and description of the post.",
-    "location": "Remote/Denver, CO",
-    "experience": "10+ Years Experience",
-    "salary": "70-80k",
-    "health": "100% Healthcare Coverage",
-    "vacation": "Unlimited PTO",
-    "retirement": "401k Match"
-  },
-  {    
-    "category": "UI Design",
-    "title": "Job Post 9",
-    "company": "Company Name",
-    "description": "A brief introduction and description of the post.",
-    "location": "Remote/Denver, CO",
-    "experience": "10+ Years Experience",
-    "salary": "70-80k",
-    "health": "100% Healthcare Coverage",
-    "vacation": "Unlimited PTO",
-    "retirement": "401k Match"
-  },
-  {    
-    "category": "Front End Development",
-    "title": "Job Post 10",
-    "company": "Company Name",
-    "description": "A brief introduction and description of the post.",
-    "location": "Remote/Denver, CO",
-    "experience": "10+ Years Experience",
-    "salary": "70-80k",
-    "health": "100% Healthcare Coverage",
-    "vacation": "Unlimited PTO",
-    "retirement": "401k Match"
-  },
-  {    
-    "category": "Full Stack Development",
-    "title": "Job Post 11",
-    "company": "Company Name",
-    "description": "A brief introduction and description of the post.",
-    "location": "Remote/Nashville, TN",
-    "experience": "10+ Years Experience",
-    "salary": "70-80k",
-    "health": "100% Healthcare Coverage",
-    "vacation": "Unlimited PTO",
-    "retirement": "401k Match"
-  },
-  {    
-    "category": "Copywriting",
-    "title": "Job Post 12",
-    "company": "Company Name",
-    "description": "A brief introduction and description of the post.",
-    "location": "Remote/Nashville, TN",
-    "experience": "10+ Years Experience",
-    "salary": "70-80k",
-    "health": "100% Healthcare Coverage",
-    "vacation": "Unlimited PTO",
-    "retirement": "401k Match"
-  },
-  {    
-    "category": "UI Design",
-    "title": "Job Post 13",
+  {
+    "title": "Art Director",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
     "location": "Remote/New York, NY",
@@ -155,9 +54,19 @@
     "vacation": "Unlimited PTO",
     "retirement": "401k Match"
   },
-  {    
-    "category": "Front End Development",
-    "title": "Job Post 14",
+  {
+    "title": "Software Engineer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/San Francisco, CA",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Copywriter",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
     "location": "Remote/Nashville, TN",
@@ -167,9 +76,19 @@
     "vacation": "Unlimited PTO",
     "retirement": "401k Match"
   },
-  {    
-    "category": "Full Stack Development",
-    "title": "Job Post 15",
+  {
+    "title": "Front End Developer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/Denver, CO",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Art Director",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
     "location": "Remote/Atlanta, GA",
@@ -179,12 +98,121 @@
     "vacation": "Unlimited PTO",
     "retirement": "401k Match"
   },
-  {    
-    "category": "Copywriting",
-    "title": "Job Post 16",
+  {
+    "title": "Full Stack Developer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/San Francisco, CA",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Graphic Designer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/Nashville, TN",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Art Director",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/San Francisco, CA",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "UI/UX Designer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/New York, NY",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Copywriter",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/Denver, CO",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Front End Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
     "location": "Remote/Atlanta, GA",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "UI/UX Designer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/San Francisco, CA",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "UI/UX Designer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/New York, NY",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Copywriter",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/Nashville, TN",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Front End Developer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/Atlanta, GA",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/Denver, CO",
     "experience": "10+ Years Experience",
     "salary": "70-80k",
     "health": "100% Healthcare Coverage",
