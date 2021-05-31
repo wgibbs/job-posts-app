@@ -22,7 +22,7 @@ class Header extends React.Component {
             </h1>
             <hr className="header__title-divider" />
             <h2>
-              {postResults.length + ' ' + jobString}
+              {postResults.length + ' ' + jobString + ' Available'}
             </h2>
           </div>
           <Search 
