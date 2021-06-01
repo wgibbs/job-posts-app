@@ -1,8 +1,12 @@
 # Job Posts App
 
-A single-page application prototype for Job Posts built with Create React App. [View Demo >>](https://www.wgibbs.com/job-posts-app/)
+A single-page application prototype for Job Posts. [View Demo >>](https://www.wgibbs.com/job-posts-app/)
+
+## Technologies
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+[Fuse.js](https://fusejs.io/)
 
 ## Available Scripts
 
