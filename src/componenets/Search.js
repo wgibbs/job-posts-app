@@ -13,8 +13,7 @@ class Search extends React.Component {
           <label htmlFor="primary-search">Search Job Title or Location</label>
           <input 
             type="search" 
-            id="primary-search" 
-            className="header__search-text-input"
+            id="primary-search"
             placeholder="Job Title or Location"
             value={searchQuery} 
             onChange={onSearch} 

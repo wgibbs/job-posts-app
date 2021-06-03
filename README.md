@@ -6,6 +6,8 @@ A single-page application prototype for Job Posts. [View Demo >>](https://www.wg
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Icons => [Material-UI](https://material-ui.com/components/icons/#material-icons)
+
 Search Library => [Fuse.js](https://fusejs.io/)
 
 ## Available Scripts
