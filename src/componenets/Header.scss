@@ -22,7 +22,7 @@
     width: $container-width;
 
     @media screen and (min-width: $break-tablet-lg) {
-      flex-direction: row;
+      align-items: flex-start;
       justify-content: space-between;
     }
   }
@@ -35,6 +35,7 @@
     flex-shrink: 0;
     line-height: 1.1;
     text-align: center;
+    width: 100%;
 
     @media screen and (min-width: $break-tablet-lg) {
       align-items: flex-start;
@@ -50,7 +51,6 @@
     border: 0;
     border-top: 2px solid $color-highlight;
     margin: 10px 0 0;
-    max-width: 240px;
     width: 100%;
   }
 }

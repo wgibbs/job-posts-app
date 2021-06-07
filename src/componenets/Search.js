@@ -2,7 +2,7 @@ import React from 'react';
 import './Search.scss';
 
 class Search extends React.Component {
-  
+
   render() {
     const activeFilter = this.props.activeFilter;
     const filterList = this.props.filterList;
@@ -13,7 +13,7 @@ class Search extends React.Component {
     return (
       <form className="search" action="#" role="search">
         <div className="search__checkboxes">
-          <h3>Filter by Category</h3>
+          <h2>Filter by Category</h2>
           <div className="search__checkboxes-interior">
             <div 
               className={'search__checkbox-wrap' + (activeFilter.length === filterList.length ? ' active' : '')}

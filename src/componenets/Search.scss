@@ -4,16 +4,18 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 25px auto 0;
+  justify-content: space-between;
+  margin: 20px auto 0;
+  width: 100%;
 
   @media screen and (min-width: $break-tablet-lg) {
     align-items: flex-start;
     flex-direction: row;
-    margin: 0;
+    margin: 20px 0 0;
   }
 
   label,
-  h3 {
+  h2 {
     color: $color-white;
     display: block;
     font-weight: 600;
@@ -26,11 +28,11 @@
   &__checkboxes {
 
     @media screen and (min-width: $break-tablet-lg) {
-      padding: 0 30px;
+      padding: 0 30px 0 0;
       text-align: left;
     }
 
-    h3 {
+    h2 {
       color: $color-white;
     }
   }
