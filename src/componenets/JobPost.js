@@ -12,11 +12,12 @@ import WorkIcon from '@material-ui/icons/Work';
 class JobPost extends React.Component {
 
   render() {
-    const posts = this.props.posts;
+    const filteredList = this.props.filteredList;
     const fuse = this.props.fuseConfig;
+
     const searchQuery = this.props.searchQuery;
     const results = fuse.search(searchQuery);
-    const postResults = searchQuery ? results.map(post => post.item) : posts;
+    const postResults = searchQuery ? results.map(post => post.item) : filteredList;
 
     return (
       <section className="job-post-container" aria-live="polite">

@@ -7,82 +7,104 @@ import Footer from './componenets/Footer';
 import posts from './api/posts.json';
 import Fuse from 'fuse.js';
 
-const fuse = new Fuse(posts, {
-  isCaseSensitive: false,
-  // includeScore: true,
-  shouldSort: true,
-  // includeMatches: false,
-  // findAllMatches: false,
-  minMatchCharLength: 1,
-  // location: 0,
-  threshold: 0.5,
-  // distance: 100,
-  // useExtendedSearch: false,
-  // ignoreLocation: false,
-  // ignoreFieldNorm: false,
-  keys: [
-    'title',
-    'location',
-  ]
-});
-
 class App extends React.Component {
   
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
+      activeFilter: [],
+      filterList: [...new Set(posts.map(p => p.category))],
+      posts: posts,
       searchQuery: '',
-      scrollActive: false,
+      searchLists: posts,
     };
-    this.handlePageScroll = this.handlePageScroll.bind(this);
-    this.onSearch = this.onSearch.bind(this);
+    this.onFilterChange = this.onFilterChange.bind(this);
+    this.onTextSearch = this.onTextSearch.bind(this);
+  }
+  
+  onFilterChange(filter) {
+    if (filter === 'all') {
+      if (this.state.activeFilter.length === this.state.filterList.length) {
+        this.setState({ activeFilter: [] });
+      } else {
+        this.setState({ activeFilter: this.state.filterList.map(filter => filter) });
+      }
+    } else {
+      if (this.state.activeFilter.indexOf(filter) > -1) {
+        const filterIndex = this.state.activeFilter.indexOf(filter);
+        const newFilter = [...this.state.activeFilter];
+        newFilter.splice(filterIndex, 1);
+        this.setState({ activeFilter: newFilter });
+      } else {
+        this.setState({ activeFilter: [...this.state.activeFilter, filter] });
+      }
+    }
   }
 
-  onSearch({ currentTarget }) {
+  onTextSearch({ currentTarget }) {
     this.setState({
       searchQuery: currentTarget.value,
     });
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handlePageScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handlePageScroll);
-  }
-
-  handlePageScroll(event) {
-    if (window.pageYOffset > 280) {
-      this.setState({
-        scrollActive: true
-      });
-    } else {
-      this.setState({
-        scrollActive: false
-      });
-    }
-  }
-
   render() {
+
+    let filteredList;
+    if (
+      this.state.activeFilter.length === 0 ||
+      this.state.activeFilter.length === this.state.filterList.length
+    ) {
+      filteredList = this.state.searchLists;
+    } else {
+      filteredList = this.state.searchLists.filter(item =>
+        this.state.activeFilter.indexOf(item.category) > -1
+      );
+    }
+
+    const fuse = new Fuse(filteredList, {
+      isCaseSensitive: false,
+      // includeScore: true,
+      shouldSort: true,
+      // includeMatches: false,
+      // findAllMatches: false,
+      minMatchCharLength: 1,
+      // location: 0,
+      threshold: 0.5,
+      // distance: 100,
+      // useExtendedSearch: false,
+      // ignoreLocation: false,
+      // ignoreFieldNorm: false,
+      keys: [
+        'title',
+        'location',
+      ]
+    });
+
+    const activeFilter = this.state.activeFilter;
+    const filterList = this.state.filterList;
+    const onFilterChange = this.onFilterChange;
+    const onTextSearch = this.onTextSearch;
+    const posts = this.state.posts;
+    const searchQuery = this.state.searchQuery;
+    
     return (
       <div className="job-posts-app">
-        <Header 
-          posts={posts}
-          fuseConfig={fuse} 
-          onSearch={this.onSearch}
-          searchActive={this.state.searchActive} 
-          searchQuery={this.state.searchQuery}
-        />
-        <JobPost 
-          posts={posts} 
+        <Header
+          activeFilter={activeFilter} 
+          filterList={filterList}
+          filteredList={filteredList}
           fuseConfig={fuse}
-          onSearch={this.onSearch} 
-          searchQuery={this.state.searchQuery}
+          onFilterChange={onFilterChange}
+          onTextSearch={onTextSearch}
+          posts={posts}
+          searchQuery={searchQuery}
+        />
+        <JobPost
+          filteredList={filteredList}
+          fuseConfig={fuse}
+          searchQuery={searchQuery}
         />
         <ScrollTopButton 
-          active={this.state.scrollActive} 
           scrollStepInPx="50" 
           delayInMs="16.66"
         />

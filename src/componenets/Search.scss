@@ -1,38 +1,130 @@
 @import "../scss/main.scss";
 
 .search {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 25px auto 0;
-  width: 100%;
-  max-width: 400px;
 
   @media screen and (min-width: $break-tablet-lg) {
+    align-items: flex-start;
+    flex-direction: row;
     margin: 0;
+  }
+
+  label,
+  h3 {
+    color: $color-white;
+    display: block;
+    font-weight: 600;
+
+    @media screen and (min-width: $break-phone-lg) {
+      font-size: 18px;
+    }
+  }
+
+  &__checkboxes {
+
+    @media screen and (min-width: $break-tablet-lg) {
+      padding: 0 30px;
+      text-align: left;
+    }
+
+    h3 {
+      color: $color-white;
+    }
+  }
+
+  &__checkboxes-interior {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4px -3px 0;
+
+    @media screen and (min-width: $break-tablet-lg) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__checkbox-wrap {
+    align-items: center;
+    border: 2px solid $color-border--primary;
+    border-radius: 16px;
+    display: flex;
+    flex-shrink: 0;
+    margin: 3px;
+    padding: 5px 10px;
+    text-align: center;
+    @include primary-transition;
+
+    @media screen and (min-width: $break-tablet-lg) {
+      padding: 10px;
+      text-align: left;
+    }
+    
+    &.active {
+      border: 2px solid $color-highlight;
+    }
+
+    label {
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 0.75;
+    }
+
+    input {
+      @include appearence-clear;
+      background: $color-white;
+      border-radius: 4px;
+      cursor: pointer;
+      height: 18px;
+      margin: 0 5px 0 0;
+      position: relative;
+      width: 18px;
+
+      &:checked {
+        background: $color-highlight;
+
+        &::after {
+          border-bottom: 3px solid $color-black;
+          border-right: 3px solid $color-black;
+          content: '';
+          height: 13px;
+          left: 0;
+          margin: auto;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: rotate(45deg);
+          width: 8px;
+        }
+      }
+    }
   }
 
   &__input-wrap {
     color: $color-dark--primary;
+    flex-shrink: 0;
+    margin: 15px 0 0;
     position: relative;
     text-align: center;
-    width: 100%;
 
     @media screen and (min-width: $break-tablet-lg) {
       text-align: left;
+      margin: 0;
     }
 
     label {
-      color: $color-white;
-
-      @media screen and (min-width: $break-phone-lg) {
-        font-size: 18px;
-      }
+      font-family: $title-font;
     }
 
     input {
       @include appearence-clear;
       background: $color-white;
       border: 2px solid $color-highlight;
-      font-size: 18px;
-      height: 50px;
+      font-size: 16px;
+      line-height: 1;
       margin: 7px 0 0;
       padding: 10px 15px;
       width: 100%;

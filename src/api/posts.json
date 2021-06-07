@@ -1,5 +1,18 @@
 [
   {
+    "category": "Web Dev/Engineering",
+    "title": "Front End Developer",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/New York, NY",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "category": "Design/Art Direction",
     "title": "Graphic Designer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -11,6 +24,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Web Dev/Engineering",
     "title": "Front End Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -22,6 +36,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Web Dev/Engineering",
     "title": "Full Stack Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -33,6 +48,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Writing",
     "title": "Copywriter",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -44,6 +60,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Design/Art Direction",
     "title": "Art Director",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -55,6 +72,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Web Dev/Engineering",
     "title": "Software Engineer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -66,6 +84,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Writing",
     "title": "Copywriter",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -77,6 +96,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Web Dev/Engineering",
     "title": "Front End Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -88,6 +108,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Design/Art Direction",
     "title": "Art Director",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -99,6 +120,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Web Dev/Engineering",
     "title": "Full Stack Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -110,6 +132,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Design/Art Direction",
     "title": "Graphic Designer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -121,6 +144,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Design/Art Direction",
     "title": "Art Director",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -132,6 +156,19 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Project MGMT",
+    "title": "Project Manager",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/Denver, CO",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "category": "Design/Art Direction",
     "title": "UI/UX Designer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -143,6 +180,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Writing",
     "title": "Copywriter",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -154,6 +192,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Web Dev/Engineering",
     "title": "Front End Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -165,6 +204,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Design/Art Direction",
     "title": "UI/UX Designer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -176,6 +216,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Design/Art Direction",
     "title": "UI/UX Designer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -187,6 +228,7 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Writing",
     "title": "Copywriter",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -198,6 +240,7 @@
     "retirement": "401k Match"
   },
   {
+     "category": "Web Dev/Engineering",
     "title": "Front End Developer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
@@ -209,10 +252,23 @@
     "retirement": "401k Match"
   },
   {
+    "category": "Web Dev/Engineering",
     "title": "Software Engineer",
     "company": "Company Name",
     "description": "A brief introduction and description of the post.",
     "location": "Remote/Denver, CO",
+    "experience": "10+ Years Experience",
+    "salary": "70-80k",
+    "health": "100% Healthcare Coverage",
+    "vacation": "Unlimited PTO",
+    "retirement": "401k Match"
+  },
+  {
+    "category": "Project MGMT",
+    "title": "Project Manager",
+    "company": "Company Name",
+    "description": "A brief introduction and description of the post.",
+    "location": "Remote/Atlanta, GA",
     "experience": "10+ Years Experience",
     "salary": "70-80k",
     "health": "100% Healthcare Coverage",
