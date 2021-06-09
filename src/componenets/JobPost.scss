@@ -4,7 +4,7 @@
   align-items: stretch;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin: 40px auto 0;
   position: relative;
   width: $container-width;
@@ -18,8 +18,9 @@
   border-radius: 6px;
   border: 1px solid $color-border--primary;
   color: $color-dark--primary;
+  display: flex;
+  flex-flow: column;
   padding: 15px;
-  display: block;
   @include primary-transition;
   margin: 5px 0;
   max-width: calc(100% - 10px);
@@ -52,6 +53,7 @@
   }
 
   &__intro {
+    flex-grow: 2;
 
     h2 {
       font-size: 20px;
@@ -87,6 +89,7 @@
   }
 
   &__highlights {
+    flex-grow: 3;
     margin: 12px 0 0;
 
     h4 {
@@ -117,7 +120,11 @@
     }
   }
 
-  &__link {
+  &__footer {
+    flex-grow: 1;
+  }
+
+  &__cta {
     align-items: center;
     border: 2px solid $color-border--primary;
     display: flex;
@@ -136,6 +143,10 @@
       margin: 0 0 0 5px;
       position: relative;
       top: -1px;
+    }
+
+    &:focus {
+      outline: 2px solid $color-dark--primary;
     }
 
     &:hover {

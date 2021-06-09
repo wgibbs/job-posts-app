@@ -46,10 +46,12 @@ class JobPost extends React.Component {
                     {post.retirement ? <li><AccountBalanceIcon fontSize="small" /> {post.retirement}</li> : null}
                   </ul>
                 </div>
-                <a className="job-post__link" href="/">
-                  <span>Learn More</span> 
-                  <DoubleArrowIcon fontSize="small" />
-                </a>
+                <div className="job-post__footer">
+                  <a className="job-post__cta" href="/">
+                    <span>Learn More</span> 
+                    <DoubleArrowIcon fontSize="small" />
+                  </a>
+                </div>
               </div>
             )
         })
