@@ -63,7 +63,7 @@
       align-items: center;
       display: flex;
       font-size: 18px;
-      margin: 8px 0 0;
+      margin: 5px 0 0;
 
       svg {
         margin-right: 3px;
@@ -77,20 +77,19 @@
     }
   }
 
-  &__title-divider {
+  &__divider {
     border: 0;
     border-bottom: 1px solid $color-border--primary;
     margin: 10px 0 0;
 
     &--small {
       max-width: 40%;
-      margin: 5px 0 0;
     }
   }
 
   &__highlights {
     flex-grow: 3;
-    margin: 12px 0 0;
+    margin: 10px 0 0;
 
     h4 {
       font-size: 14px;
@@ -122,6 +121,7 @@
 
   &__footer {
     flex-grow: 1;
+    margin: 15px 0 0;
   }
 
   &__cta {
@@ -132,7 +132,6 @@
     font-family: $text-font;
     justify-content: center;
     line-height: 1;
-    margin: 15px 0 0;
     padding: 10px;
     text-align: center;
     text-decoration: none;

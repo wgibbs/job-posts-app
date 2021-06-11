@@ -16,12 +16,12 @@ class JobPost extends React.Component {
   }
 
   render() {
-    const filteredList = this.props.filteredList;
+    const filteredResults = this.props.filteredResults;
     const fuse = this.props.fuseConfig;
 
     const searchQuery = this.props.searchQuery;
     const results = fuse.search(searchQuery);
-    const postResults = searchQuery ? results.map(post => post.item) : filteredList;
+    const postResults = searchQuery ? results.map(post => post.item) : filteredResults;
 
     return (
       <section className="job-post-container" aria-live="polite">
@@ -35,12 +35,12 @@ class JobPost extends React.Component {
                 <div className="job-post__intro">
                   <h2>{post.title}</h2>
                   <h3><StarsIcon fontSize="small" /> {post.company}</h3>
-                  <hr className="job-post__title-divider" />
+                  <hr className="job-post__divider" />
                   <p>{post.description}</p>
                 </div>
                 <div className="job-post__highlights">
                   <h4>Highlights:</h4>
-                  <hr className="job-post__title-divider job-post__title-divider--small" />
+                  <hr className="job-post__divider job-post__divider--small" />
                   <ul>
                     {post.location ? <li><LocationOnIcon fontSize="small" /> {post.location}</li> : null}
                     {post.experience ? <li><WorkIcon fontSize="small" /> {post.experience}</li> : null}

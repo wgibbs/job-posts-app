@@ -14,9 +14,8 @@ class App extends React.Component {
     this.state = {
       activeFilter: [],
       filterList: [...new Set(posts.map(p => p.category))],
-      posts: posts,
       searchQuery: '',
-      searchLists: posts,
+      posts: posts,
     };
     this.onFilterChange = this.onFilterChange.bind(this);
     this.onTextSearch = this.onTextSearch.bind(this);
@@ -49,19 +48,19 @@ class App extends React.Component {
 
   render() {
 
-    let filteredList;
+    let filteredResults;
     if (
       this.state.activeFilter.length === 0 ||
       this.state.activeFilter.length === this.state.filterList.length
     ) {
-      filteredList = this.state.searchLists;
+      filteredResults = this.state.posts;
     } else {
-      filteredList = this.state.searchLists.filter(item =>
+      filteredResults = this.state.posts.filter(item =>
         this.state.activeFilter.indexOf(item.category) > -1
       );
     }
 
-    const fuse = new Fuse(filteredList, {
+    const fuse = new Fuse(filteredResults, {
       isCaseSensitive: false,
       // includeScore: true,
       shouldSort: true,
@@ -84,7 +83,6 @@ class App extends React.Component {
     const filterList = this.state.filterList;
     const onFilterChange = this.onFilterChange;
     const onTextSearch = this.onTextSearch;
-    const posts = this.state.posts;
     const searchQuery = this.state.searchQuery;
     
     return (
@@ -92,15 +90,12 @@ class App extends React.Component {
         <Header
           activeFilter={activeFilter} 
           filterList={filterList}
-          filteredList={filteredList}
-          fuseConfig={fuse}
           onFilterChange={onFilterChange}
           onTextSearch={onTextSearch}
-          posts={posts}
           searchQuery={searchQuery}
         />
         <JobPost
-          filteredList={filteredList}
+          filteredResults={filteredResults}
           fuseConfig={fuse}
           searchQuery={searchQuery}
         />
