@@ -11,6 +11,10 @@ import WorkIcon from '@material-ui/icons/Work';
 
 class JobPost extends React.Component {
 
+  onClick(e) { 
+    e.preventDefault();
+  }
+
   render() {
     const filteredList = this.props.filteredList;
     const fuse = this.props.fuseConfig;
@@ -47,7 +51,7 @@ class JobPost extends React.Component {
                   </ul>
                 </div>
                 <div className="job-post__footer">
-                  <a className="job-post__cta" href="/">
+                  <a className="job-post__cta" href="/" onClick={this.onClick}>
                     <span>Learn More</span> 
                     <DoubleArrowIcon fontSize="small" />
                   </a>
