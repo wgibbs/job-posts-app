@@ -1,6 +1,6 @@
 # Job Posts App
 
-A single-page application prototype for Job Posts. [View Demo >>](https://www.wgibbs.com/job-posts-app/)
+A single-page application prototype for Job Posts. [View Demo >>](https://wgibbs.github.io/job-posts-app/)
 
 ## Technologies
 
