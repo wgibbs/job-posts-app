@@ -10,6 +10,12 @@ Icons => [Material-UI](https://material-ui.com/components/icons/#material-icons)
 
 Search Library => [Fuse.js](https://fusejs.io/)
 
+## Running Local Build
+
+###`clone repo`
+###`npm install`
+###`npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
