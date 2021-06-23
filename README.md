@@ -12,9 +12,9 @@ Search Library => [Fuse.js](https://fusejs.io/)
 
 ## Running Local Build
 
-###`clone repo`
-###`npm install`
-###`npm start`
+### `clone repo`
+### `npm install`
+### `npm start`
 
 ## Available Scripts
 
